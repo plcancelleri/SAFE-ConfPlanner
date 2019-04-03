@@ -21,7 +21,7 @@ The application showcases a couple of things:
 * It shows the nice fit of and similarity between CQRS/Event-Sourcing on the backend and the Elm-Architecture on the frontend.
 * It reuses projections from the backend in the update function of the elmish app. The backend is sending domain events to the frontend and the (Elm-)model is updated with the help of projections defined in the backend (on all clients that are connected via websockets).
 * It shows an easy way of implementing "Whatif"-Scenarios, i.e. scenarios that enable the user try out different actions. When the user is happy with the result the system sends a batch of commands to the server. When "Whatif-Mode" is enabled the client reuses not only the projections but also the domain behaviour defined on the server to create the events needed by the update function. The potential commands are also stored.
-* It uses the awesome [Fulma](https://mangelmaxime.github.io/Fulma/) library for styling
+* It uses the awesome [Fulma](https://fulma.github.io/Fulma/) library for styling
 * It has BDD Style tests that show how nice the behaviour of Event-Sourced systems can be tested.
 * Websockets with Elmish/Suave
 
